@@ -296,3 +296,30 @@ button.toggler-menu {
     display: none!important;
   }
 }
+
+@media (max-width: 767px){
+  .banner .box h6{
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+}
+
+@media (max-width: 767px){
+  .banner .box h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px){
+  .banner .box .lead {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 991px){
+  .banner .me{
+    opacity: 0.4;
+    width: 80vw;
+  }
+}
