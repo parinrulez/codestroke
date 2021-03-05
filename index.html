@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cOdestrOke - The Web StudiO</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- FontAwesome CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="mob-header">
+    <div class="d-flex">
+      <div class="navbar-brand">
+        <a href="#">
+          <img src="images/cOde-logo-white.png" alt="logo" />
+        </a>
+      </div>
+      <button class="toggler-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+  <!-- header section starts -->
+  <header class="header-left" id="navbar-collapse-toggle">
+    <div class="top">
+      <a href="#">C</a>
+    </div>
+    <ul class="nav nav-menu">
+      <li>
+        <a href="#" class="nav-link active" data-toggle="tooltip" title="HOME">
+          <i class="fa fa-user-o"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link" data-toggle="tooltip" title="ABOUT">
+          <i class="fa fa-address-book-o"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link" data-toggle="tooltip" title="RESUME">
+          <i class="fa fa-file-word-o"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link" data-toggle="tooltip" title="WORK">
+          <i class="fa fa-wpexplorer"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link" data-toggle="tooltip" title="BLOG">
+          <i class="fa fa-rss"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link" data-toggle="tooltip" title="CONTACT">
+          <i class="fa fa-volume-control-phone"></i>
+        </a>
+      </li>
+    </ul>
+  </header>
+  <!-- header section ends -->
+  <!-- main section starts -->
+  <main>
+    <section class="banner">
+      <div class="top-fixed d-flex">
+        <div class="info">
+          <label>+91 9978333397</label>
+          <label>hi@codestroke.com</label>
+        </div>
+        <div class="social">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-pinterest"></i>
+            <i class="fa fa-behance"></i>
+            <i class="fa fa-dribbble"></i>
+          </a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row full-screen align-items-center">
+          <div class="col-lg-7">
+            <div class="box">
+              <h6>Hello, My Name is </h6>
+              <h1>cOdestrOke</h1>
+              <p class="lead">
+                Full- Stack Developer | UX/UI Designer | Freelancer
+              </p>
+              <p class="desc">lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui necessitatibus blanditiis iste molestiad. Nostrum, quasi, facere! Maxime accusamus dolorem delectus inventore, consequatur a vera, laudantium, quidem autem magnam quae adipisci!</p>
+              <div class="btn-bar">
+                <a href="#">Download CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="me" style="background-image: url(images/9.png)">
+      </div>
+    </section>
+  </main>
+  <!-- main section ends -->
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js"></script>
+  <script>
+    (function($) {
+      "use strict";
+      var NAY = {};
+      NAY.MenuTogglerClose = function() {
+        $(".toggler-menu").on('click', function() {
+          $(".header-left").stop().toggleClass('menu-open');
+        });
+        $('.header-left a').on('click', function() {
+          var toggle = $('.toggler-menu');
+        });
+      }
+      $(document).on("ready", function() {
+        NAY.MenuTogglerClose()
+      });
+    })(jQuery);
+  </script>
+</body>
+
+</html>
